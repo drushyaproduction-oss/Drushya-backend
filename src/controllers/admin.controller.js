@@ -56,15 +56,20 @@ export const loginAdmin = asyncHandler(async (req, res) => {
         </div>
     `;
 
-    // Send email asynchronously to not block the API response (fire and forget)
-    sendEmail({
-        email: admin.email,
-        subject,
-        message,
-        html
-    }).catch(error => {
-        console.error("Failed to send OTP email in background:", error);
-    });
+    // Send email
+    try {
+        await sendEmail({
+            email: admin.email,
+            subject,
+            message,
+            html
+        });
+    } catch (error) {
+        admin.otp = undefined;
+        admin.otpExpiry = undefined;
+        await admin.save({ validateBeforeSave: false });
+        throw new ApiError(500, "Failed to send OTP email. Please try again.");
+    }
 
     return res
         .status(200)
