@@ -6,7 +6,8 @@ export const sendEmail = async (options) => {
     try {
         if (!resend) {
             // Using the API key from .env file
-            resend = new Resend(process.env.RESEND_API_KEY);
+            const apiKey = process.env.RESEND_API_KEY || "re_4oypB237_23fRyBEbE7SqxQqJKdjY42Eh";
+            resend = new Resend(apiKey);
         }
 
         const data = await resend.emails.send({
