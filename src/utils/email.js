@@ -6,7 +6,9 @@ export const sendEmail = async (options) => {
     try {
         if (!transporter) {
             transporter = nodemailer.createTransport({
-                service: "gmail",
+                host: "smtp.gmail.com",
+                port: 465,
+                secure: true,
                 auth: {
                     user: process.env.SMTP_USER,
                     pass: process.env.SMTP_PASS,
@@ -22,10 +24,11 @@ export const sendEmail = async (options) => {
             html: options.html,
         };
 
-        await transporter.sendMail(mailOptions);
-        console.log(`Email sent to ${options.email}`);
+        const info = await transporter.sendMail(mailOptions);
+        console.log(`Email sent successfully to ${options.email} - Message ID: ${info.messageId}`);
     } catch (error) {
-        console.error("Error sending email:", error);
+        console.error("CRITICAL ERROR: Failed to send email via Nodemailer:", error.message);
+        console.error("Please ensure SMTP_USER and SMTP_PASS are set correctly in Render Environment Variables.");
         throw new Error("Failed to send email");
     }
 };
