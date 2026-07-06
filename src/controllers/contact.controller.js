@@ -8,8 +8,8 @@ import { sendEmail } from "../utils/email.js";
 export const createContactMessage = asyncHandler(async (req, res) => {
     const { name, email, mobile, subject, message, studioLocation } = req.body;
 
-    if (!name || !email || !mobile || !subject || !message || !studioLocation) {
-        throw new ApiError(400, "All fields (name, email, mobile, subject, message, and studio location) are required");
+    if (!name || !email || !mobile || !message || !studioLocation) {
+        throw new ApiError(400, "All fields (name, email, mobile, message, and studio location) are required");
     }
 
     const contact = await Contact.create({

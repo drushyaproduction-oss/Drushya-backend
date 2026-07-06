@@ -1,0 +1,65 @@
+2026-07-06T08:33:05.658Z All fields (name, email, mobile, subject, message, and studio location) are required
+Error: All fields (name, email, mobile, subject, message, and studio location) are required
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/controllers/contact.controller.js:12:15
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/utils/asyncHandler.js:3:25
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:291:5)
+
+2026-07-06T08:33:28.267Z All fields (name, email, mobile, subject, message, and studio location) are required
+Error: All fields (name, email, mobile, subject, message, and studio location) are required
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/controllers/contact.controller.js:12:15
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/utils/asyncHandler.js:3:25
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:291:5)
+
+2026-07-06T08:33:28.773Z All fields (name, email, mobile, subject, message, and studio location) are required
+Error: All fields (name, email, mobile, subject, message, and studio location) are required
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/controllers/contact.controller.js:12:15
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/utils/asyncHandler.js:3:25
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:291:5)
+
+2026-07-06T08:33:28.957Z All fields (name, email, mobile, subject, message, and studio location) are required
+Error: All fields (name, email, mobile, subject, message, and studio location) are required
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/controllers/contact.controller.js:12:15
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/utils/asyncHandler.js:3:25
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:291:5)
+
+2026-07-06T08:36:58.570Z All fields (name, email, mobile, subject, message, and studio location) are required
+Error: All fields (name, email, mobile, subject, message, and studio location) are required
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/controllers/contact.controller.js:12:15
+    at file:///C:/Users/Client/Desktop/new-drushya/Drushya-backend/src/utils/asyncHandler.js:3:25
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\Client\Desktop\new-drushya\Drushya-backend\node_modules\router\index.js:291:5)
+
