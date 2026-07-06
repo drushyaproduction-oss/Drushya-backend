@@ -1,37 +1,30 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-let transporter;
+let resend;
 
 export const sendEmail = async (options) => {
     try {
-        if (!transporter) {
-            transporter = nodemailer.createTransport({
-                service: "gmail",
-                auth: {
-                    user: process.env.SMTP_USER,
-                    pass: process.env.SMTP_PASS,
-                },
-                tls: {
-                    rejectUnauthorized: false
-                },
-                pool: true,
-                maxConnections: 1,
-                maxMessages: 10
-            });
+        if (!resend) {
+            // Using the API key from .env file
+            resend = new Resend(process.env.RESEND_API_KEY);
         }
 
-        const mailOptions = {
-            from: process.env.SMTP_USER,
+        const data = await resend.emails.send({
+            from: "Drushya Admin <onboarding@resend.dev>",
             to: options.email,
             subject: options.subject,
             text: options.message,
             html: options.html,
-        };
+        });
 
-        const info = await transporter.sendMail(mailOptions);
-        console.log(`Email sent successfully to ${options.email}`);
+        if (data.error) {
+            console.error("Resend API Error:", data.error);
+            throw new Error(data.error.message);
+        }
+
+        console.log(`Email sent successfully to ${options.email} using Resend`);
     } catch (error) {
-        console.error("CRITICAL ERROR in sendEmail:", error);
+        console.error("CRITICAL ERROR in sendEmail (Resend):", error);
         throw new Error("Failed to send email");
     }
 };
